@@ -59,6 +59,13 @@ body {
     color: #ffffff;
 }
 
+p.total-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF5E19;
+    text-align: right;
+}
+
 footer.copyright-box {
     border-top: 1px solid #ccc;
 }
