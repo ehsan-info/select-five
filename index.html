@@ -33,8 +33,9 @@
                             <div class="card box-background">
                                 <img src="images/Babar-Azam.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Babar Azam</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="babar-azam" class="card-title">Babar Azam</h5>
+                                    <button onclick="getPlayerName('babar-azam');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -42,8 +43,9 @@
                             <div class="card box-background">
                                 <img src="images/ben-stokes.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Ben Stokes</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="ben-stokes" class="card-title">Ben Stokes</h5>
+                                    <button onclick="getPlayerName('ben-stokes');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -51,8 +53,9 @@
                             <div class="card box-background">
                                 <img src="images/liton-das.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Liton Das</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="liton-das" class="card-title">Liton Das</h5>
+                                    <button onclick="getPlayerName('liton-das');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +63,9 @@
                             <div class="card box-background">
                                 <img src="images/rashid-khan.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Rashid Khan</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="rashid-khan" class="card-title">Rashid Khan</h5>
+                                    <button onclick="getPlayerName('rashid-khan');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -69,8 +73,9 @@
                             <div class="card box-background">
                                 <img src="images/shaheen-afridi.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Shaheen Afridi</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="shaheen-afridi" class="card-title">Shaheen Afridi</h5>
+                                    <button onclick="getPlayerName('shaheen-afridi');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +83,9 @@
                             <div class="card box-background">
                                 <img src="images/shakib.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Shakib Al Hasan</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="shakib-hasan" class="card-title">Shakib Al Hasan</h5>
+                                    <button onclick="getPlayerName('shakib-hasan');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -87,8 +93,9 @@
                             <div class="card box-background">
                                 <img src="images/virat-kohli.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Virat Kohli</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="virat-kohli" class="card-title">Virat Kohli</h5>
+                                    <button onclick="getPlayerName('virat-kohli');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -96,8 +103,9 @@
                             <div class="card box-background">
                                 <img src="images/steven-smith.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Steven Smith</h5>
-                                    <button id="btn-select" class="btn btn-primary btn-select-button">SELECT</button>
+                                    <h5 id="steven-smith" class="card-title">Steven Smith</h5>
+                                    <button onclick="getPlayerName('steven-smith');this.disabled=true" id="btn-select"
+                                        class="btn btn-primary btn-select-button">SELECT</button>
                                 </div>
                             </div>
                         </div>
@@ -105,12 +113,8 @@
                     <div class="row col-3 gy-3 right-col">
                         <div class="col-12 mt-3 box-background">
                             <h3 class="text-center my-4">Selected-V</h3>
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Sequi laudantium aperiam facere aut!</li>
-                                <li>Ea repudiandae qui omnis veniam?</li>
-                                <li>Ipsa nesciunt cum placeat dolorum?</li>
-                                <li>Voluptatibus expedita cumque vero tempore!</li>
+                            <ol id="player-total-list">
+
                             </ol>
                         </div>
                         <div class="col-12 mt-3 box-background">
